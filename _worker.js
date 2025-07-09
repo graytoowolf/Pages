@@ -5,9 +5,9 @@ export default {
   async fetch(request, env) {
     // 验证 User-Agent
     const userAgent = request.headers.get('User-Agent');
-    if (!userAgent?.includes('MiniSkins')) {
-      return new Response('Not Found', { status: 404 });
-    }
+    //if (!userAgent?.includes('MiniSkins')) {
+    //  return new Response('Not Found', { status: 404 });
+    //}
 
     // 解析 URL
     const url = new URL(request.url);
